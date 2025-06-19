@@ -170,7 +170,7 @@ body {
 
 .about-text {
   flex: 1; /* Allow the text to take up the remaining space */
-  text-align: left; /* Align the text to the left */
+  text-align: left;
 }
 
 .about-h3 {
@@ -327,7 +327,7 @@ body {
   line-height: 1.4;
 }
 
-/* Responsive Design */
+
 @media only screen and (max-width: 768px) {
   .skill-item {
     flex: 1 1 calc(50% - 2rem); /* 2 items per row on smaller screens */
@@ -350,7 +350,7 @@ body {
 }
 
 .projects-container {
-  max-width: 1200px; /* Match the max-width of other sections */
+  max-width: 960px;
   margin: 0 auto; /* Center the container */
 }
 
@@ -360,6 +360,7 @@ body {
   font-weight: 700;
   margin-bottom: 2rem;
   text-align: left; /* Align the header to the left */
+  padding-top: 3.5rem;
 }
 
 .project-p {
@@ -385,6 +386,26 @@ body {
   line-height: 1.6;
   margin-bottom: 1.5rem;
   color: #666666;
+}
+
+.btn-projects {
+  display: inline-block;
+  background-color: #DA0037;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn-projects:hover {
+  background-color: #EDEDED;
+  color: #DA0037;
 }
 
 .carousel-inner img {
@@ -442,7 +463,7 @@ body {
   }
 
   .carousel-inner img {
-    max-height: 200px; /* Further adjust image height for very small screens */
+    max-height: 200px; /* Adjust image height - small screens */
   }
 }
 
@@ -452,7 +473,7 @@ body {
 
 .contact-section {
   padding: 5% 10%;
-  background-color: #E0E0E0; /* Match the theme of your site */
+  background-color: #E0E0E0;
   color: #EDEDED;
   text-align: center;
 }
